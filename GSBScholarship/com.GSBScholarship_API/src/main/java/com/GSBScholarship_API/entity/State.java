@@ -1,0 +1,39 @@
+package com.GSBScholarship_API.entity;
+
+import jakarta.persistence.*;
+
+
+
+@Entity
+@Table(name = "online_states")
+public class State {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="id_state")
+	private  int id;
+	
+	@Column(name="state_name")
+	private String stateName;
+	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getStateName() {
+		return stateName;
+	}
+
+	public void setStateName(String stateName) {
+		this.stateName = stateName;
+	}
+
+	
+
+	
+	
+}
